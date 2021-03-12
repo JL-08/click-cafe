@@ -1,0 +1,458 @@
+
+@charset "utf-8";
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Raleway;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+/*----------------HEADER---------------*/
+.header{
+	background-color: rgba(255,255,255,0.90);
+	width: 100%;
+	height: 13%;
+	font-size: 14px;
+	z-index: 10;
+	position: fixed;
+}
+#CafeLogo{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin: 10px;
+}
+#ClickCafe{
+	width: 140px;
+	height: 90px;
+	position: absolute;
+	left: 68px;
+	top: -3px;
+	
+}
+/*------------------NAVIGATION---------------------*/
+
+ul.nav{
+	width: 50%;
+}
+ul.nav, ul.sub1, ul.sub2{
+	margin: 0;
+	margin-top: 0.8%;
+	padding: 0;
+	list-style-type: none;
+	color: #8d6f5b;
+	position: relative;
+	top: 20px;
+	left: 25%;
+}
+ul.sub1, ul.sub2{
+	border: 1px solid #5d3424;
+}
+ul.nav li{
+	width: 120px;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-right: 4px;
+}
+ul.nav li:hover{
+	text-decoration: underline;
+}
+ul.nav .sub1 a{
+	margin-top: 5px;
+}
+ul.nav .sub2 a{
+	margin-left: 3px;
+}
+ul.nav ul.sub1{
+	display: none;
+	position: absolute;
+	top: 26px;
+	left: 0;
+	background-color: white;
+}
+ul.nav ul.sub2{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 126px;
+	background-color: white;
+}
+ul.nav li:hover .sub1{
+	display: block;
+}
+ul.nav .sub1 li:hover .sub2{
+	display: block;
+}
+.header a{
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	line-height: 25px;
+}
+.header a:hover{
+	color: #5d3424;
+}
+
+/*----------------------------------*/
+
+.container{
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+/*---------------BANNER-------------------*/
+.banner{
+	background: url(images/AboutUsBanner.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: fixed;
+}
+
+/*--------------CONTENT-------------*/
+
+.Content{
+	width: 100%;
+	position: relative;
+	top: 600px;
+}
+.Location{
+	width: 100%;
+	height: 600px;
+	background-color: #eeeeee;
+	color: #8d6f5b;
+}
+.Head{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.Head span{
+	margin: 10px;
+	font-size: 36px;
+	letter-spacing: 5px;
+}
+.LocationInfo{
+	position: relative;
+	margin-top: 3%;
+}
+.left{
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	width: 20%;
+	font-size: 1.3em;
+	border: 1px solid;
+	color: white;
+	text-align: center;
+	background-color: rgba(93,52,36,0.7);
+}
+.center img{
+	position: absolute;
+	left: 25%;
+	width: 650px;
+	height: 450px;
+	border-radius: 100%;
+}
+.right{
+	position: absolute;
+	right: 1%;
+	width: 19%;
+	font-size: 1.3em;
+	color: white;
+	text-align: center;
+	background-color: rgba(93,52,36,0.7);
+}
+.Heading{
+	width: 100%;
+	height: 60px;
+	background-color: #5d3424;
+	color: white;
+	letter-spacing: 5px;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 10px 0 0 10px;
+}
+.Library, .Outside{
+	width: 100%;
+	height: 500px;
+	background-color: white;
+}
+.Library img{
+	width: 50%;
+	height: inherit;
+	float: left;
+}
+.Outside img{
+	width: 50%;
+	height: inherit;
+	float: right;
+}
+.LibraryContent{
+	width: 400px;
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 110px;
+	left: 100px;
+	color: #8d6f5b;
+}
+.OutsideContent{
+	width: 400px;
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 110px;
+	left: 100px;
+	color: #8d6f5b;
+}
+.LibraryContent p,.OutsideContent p{
+	text-align: justify;
+	line-height: 20px;
+}
+.Members{
+	height: 500px;
+	background-color: white;
+}
+/*--------------Modal------------------*/
+.MemberPics{
+	margin: 10% 0 0 5%;
+}
+#myImg1, #myImg2, #myImg3, #myImg4, #myImg5  {
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 2%;
+}
+
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover {opacity: 0.4;}
+
+/* The Modal (background) */
+.modal1, .modal2, .modal3,.modal4, .modal5{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content1, .modal-content2, .modal-content3, .modal-content4, .modal-content5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 23%;
+}
+
+/* Caption of Modal Image */
+#caption1, #caption2, #caption3, #caption4, #caption5 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content1, .modal-content2, .modal-content3, .modal-content4, .modal-content5, 
+#caption1, #caption2, #caption3, #caption4, #caption5 {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close1, .close2, .close3, .close4, .close5 {
+    position: absolute;
+    top: 15%;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close1:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover,
+.close1:focus, .close2:focus, .close3:focus, .close4:focus, .close5:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/*--------------FOOTER-----------------*/
+.footer{
+	width: 1280px;
+	height: auto;
+}
+.Newsletter{
+	float: left;
+	width: 50%;
+	height: 500px;
+	background-color: #ebebe4;
+	border: thin solid #ebebe4;
+}
+.NewsletterContent{
+	color: #8d6f5b;
+	margin-left: 30px;
+}
+.Newsletter h2{
+	text-transform: uppercase;
+	font-size: 32px;
+}
+.Newsletter p{
+	margin-top: -30px;
+	font-size: 12px;
+}
+form{
+	margin: 30px 0px;
+}
+label{
+	font-size: 12px;
+}
+#lastname{
+	margin: 0px 22%;
+}
+input{
+	background: none;
+	border: none;
+	border-bottom: 3px solid #5d3424;
+}
+#inputlast{
+	margin: 0px 4% 0 5%;
+}
+.formbutton{
+	margin: 50px 0;
+	word-spacing: 70px;
+}
+.formbutton input{
+	border-top: 3px solid;
+	padding: 20px;
+	width: 140px;
+}
+.formbutton input:hover{
+	color: #5d3424;
+}
+.info{
+	margin: 30px;
+	color: #8d6f5b;
+}
+.Contact{
+	float: left;
+	width: 65%;
+	padding-bottom: 20px;
+	line-height: 40px;
+	word-spacing: 3px;
+	border-right: 3px solid;
+}
+.Contact span{
+	margin-left: 10px;
+	position: relative;
+	top: -8px;
+	font-size: 12px; 
+}
+.Contact img{
+	width: 30px;
+	height: 30px;
+}
+.navigation{
+	float: right;
+	position: relative;
+	top: -15px;
+	right: 40px;
+	line-height: 30px;
+	letter-spacing: 4px;
+}
+.navigation ul{
+	list-style: none;
+}
+.navigation a{
+	color: #8d6f5b;
+	text-decoration: none;
+}
+.navigation a:hover{
+	text-decoration: underline;
+}
+.SocialMedia{
+	position: absolute;
+	right: 0px;
+}
+.Column1{
+	float: left;
+}
+.Column2{
+	float: right;
+}
+.FB, .Twitter, .Insta, .Google, .Tumblr, .Youtube{
+	width: 320px;
+	height: 166px;
+	overflow: hidden;
+}
+.SocialMedia img{
+	transition: transform .2s ease-in-out;
+	
+}
+.SocialMedia img:hover{
+	transform: translate3d(0px, -166px, 0px);
+}
+.credits{
+	position: relative;
+	top: 498px;
+	font-size: 12px;
+	width: 100%;
+	height: 50px;
+	background-color: white; 
+	color: #8d6f5b;
+}
+.credits img{
+	width: 40px;
+	height: 40px;
+}
+#credits1{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	margin: 10px 0px 0px 10px;
+}
+#credits2{
+	position: absolute;
+	right: 50px;
+}
