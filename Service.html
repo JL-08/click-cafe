@@ -11,7 +11,7 @@
 
 <body>
 <div class="container">
-  <div class="header">
+  <nav class="header">
     <div class="LogoWrapper"> 
 		<a href="index.html"> <img id="CafeLogo" src="images/CafeLogo1.png"> <img id="ClickCafe" src="images/CafeLogo2.png"> </a> 
     </div>
@@ -49,7 +49,7 @@
       <li><a href="Contact Us.html">Contact Us</a></li>
     </ul>
     </div>
-  </div>
+  </nav>
   <div class="banner">
     <div class="Headline">
       <h1>Printing Service</br>Done Right</h1>
@@ -59,12 +59,13 @@
     <div class="firstinfo">
       <p>Our services include digital printing, binding, laminating, and cutting. All the regular services you can find in a serious printing shop. At Click Cafe, we do it well, and we do it while you relax.</p>
     </div>
-    <div class="Printing"> <img src="images/Service-Print.jpg">
+    <div class="Printing">
+      <img src="images/Service-Print.jpg">
       <div class="PrintContent">
         <h1>Digital Printing</h1>
         <p>We offer premium printing service for creative professionals and students with world class customer service and cheap, fast, and crisp print quality.</p>
         <div class="SeeMore">
-          <a href="Digital Printing.html"><h4>See More</h4></a>
+          <a href="Digital Printing.html"><button>See More</button></a>
         </div>
       </div>
     </div>
@@ -73,7 +74,7 @@
         <h1>Binding</h1>
         <p>We are a company that specializes in Bookbinding Services. We have done work for all major Universities worldwide, lawyers, Government Services and the General Public</p>
         <div class="SeeMore">
-          <a href="Binding.html"><h4>See More</h4></a>
+          <a href="Binding.html"><button>See More</button></a>
         </div>
       </div>
       <img src="images/Service - Bind.jpeg">
@@ -93,21 +94,28 @@
         </div>
         </a>
       </div>
-
-      </div>
     </div>
-    <div class="footer">
+  </div>
+    <footer class="footer">
       <div class="Newsletter">
         <div class="NewsletterContent">
           <h2>Subscribe to our Newsletter</h2>
           <p>To recieve updates about our current events, promos/discounts, and special offers.</p>
-          <form name="myForm" onsubmit="return formValidation()" action="mailto:janellelacsamna@gmail.com" method="post" enctype="text/plain">
-            <label>First Name</label>
-            <label id="lastname">Last Name</label>
-            <label>Email Address</label><br>
-            <input type="text" name="fname">
-            <input type="text" name="lname" id="inputlast">
-            <input type="text" name="email">
+          <form name="myForm" onsubmit="return formValidation()" action="mailto:janellelacsamana@gmail.com" method="post" enctype="text/plain">
+            <div class="form-input">
+              <div>
+                <label>First Name</label>
+                <input type="text" name="fname">
+              </div>
+              <div>
+                <label id="lastname">Last Name</label>
+                <input type="text" name="lname" id="inputlast">
+              </div>
+              <div>
+                <label>Email Address</label>
+                <input type="text" name="email">
+              </div>
+            </div>
             <div class="formbutton">
               <input type="submit" value="Subscribe">
               <input type="reset" value="Reset">
@@ -142,7 +150,7 @@
         </div>
       </div>
       <div class="credits"> <span id="credits1">© 2017 CLICK CAFE. ALL RIGHTS RESERVED</span> <span id="credits2">Made with ❤ by <img src="images/CompanyLogoTransparent.png"></span> </div>
-    </div>
+    </footer>
   </div>
 </div>
 <script type="text/javascript" src="formValidation.js"></script>
