@@ -14,7 +14,7 @@
 
 <body>
 	<div class="container">
-		<div class="header">
+		<nav class="header">
         <div class="LogoWrapper"> <a href="index.html"> <img id="CafeLogo" src="images/CafeLogo1.png"> <img id="ClickCafe" src="images/CafeLogo2.png"> </a> </div>
         <div class="Navigation">
             <ul class="nav">
@@ -50,7 +50,7 @@
             <li><a href="Contact Us.html">Contact Us</a></li>
           </ul>
           </div>
-      </div>
+		</nav>
         <div class="banner">
         <div class="Headline">
 			<h1>Printing Service</br>Done Right</h1>
@@ -63,7 +63,7 @@
 	  				<h2>Saddle Stitch</h2>
 	  				<p>Saddle stitch is another name for stapler binding. For documents that have less than 20 pages, saddle stitch is applicable. </p>
 	  				<div class="SeeMore">
-					  <h4>See More</h4>
+					  <a href="Saddle Stitch.html#sec2"><button>See More</button></a>
 					</div>
 	  			</div>
 	  		</div>
@@ -74,57 +74,66 @@
 	  		</div>
 	  	</div>
 	  	<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="images/SaddleStitchImg1.jpg"></div>
-	  	<div class="Section2">
+	  	<div class="Section2" id="#sec2">
 	  		<p>Any larger and the pages tend to curve and additional cutting services are needed to straighten out the pages.</p>
 	  		<img src="images/Saddle Stitch - img1.jpg">
 	  	</div>
-    	<div class="footer">
-    		<div class="Newsletter">
-    			<div class="NewsletterContent">
-    				<h2>Subscribe to our Newsletter</h2>
-					  <p>To recieve updates about our current events, promos/discounts, and special offers.</p>
-					  <form name="myForm" onsubmit="return formValidation()" action="mailto:janellelacsamna@gmail.com" method="post" enctype="text/plain">
-						<label>First Name</label>
-						<label id="lastname">Last Name</label>
-						<label>Email Address</label><br>
-						<input type="text" name="fname">
-						<input type="text" name="lname" id="inputlast">
-						<input type="text" name="email">
-						<div class="formbutton">
-						  <input type="submit" value="Subscribe">
-						  <input type="reset" value="Reset">
-						</div>
-					  </form>
-    			</div>
-    			<div class="info">
-					<div class="Contact"> <img src="images/PhoneIcon.png"> <span>(02) 281 8888 / 8 7000 /  (02) 8353312</span><br>
-					<img src="images/MailIcon.png"> <span>Clickcafe@gmail.com</span><br>
-					<img src="images/locationIcon.png"> <span>P. Paredes, Sampaloc, Manila, Metro Manila</span> </div>
-				  <div class="navigation">
-					<ul>
-					  <li><a href="index.html">Home</a></li>
-					  <li><a href="Service.html">Services</a></li>
-					  <li><a href="Menu.html">Menu</a></li>
-					  <li><a href="About us.html">About Us</a></li>
-					  <li><a href="Contact Us.html">Contact Us</a></li>
-					</ul>
+		  <footer class="footer">
+			<div class="Newsletter">
+			  <div class="NewsletterContent">
+				<h2>Subscribe to our Newsletter</h2>
+				<p>To recieve updates about our current events, promos/discounts, and special offers.</p>
+				<form name="myForm" onsubmit="return formValidation()" action="mailto:janellelacsamana@gmail.com" method="post" enctype="text/plain">
+				  <div class="form-input">
+					<div>
+					  <label>First Name</label>
+					  <input type="text" name="fname">
+					</div>
+					<div>
+					  <label id="lastname">Last Name</label>
+					  <input type="text" name="lname" id="inputlast">
+					</div>
+					<div>
+					  <label>Email Address</label>
+					  <input type="text" name="email">
+					</div>
 				  </div>
-    			</div>
-    		</div>
-    		<div class="SocialMedia">
-    			<div class="Column1">
-				  <div class="FB"> <a href="https://www.facebook.com"><img src="images/Footer-FB.jpg"></a> </div>
-				  <div class="Twitter"> <a href="https://www.twitter.com"><img src="images/Footer-Twitter.jpg"></a> </div>
-				  <div class="Insta"> <a href="https://www.instagram.com"><img src="images/Footer-Insta.jpg"></a> </div>
+				  <div class="formbutton">
+					<input type="submit" value="Subscribe">
+					<input type="reset" value="Reset">
+				  </div>
+				</form>
+			  </div>
+			  <div class="info">
+				<div class="Contact">
+				  <img src="images/PhoneIcon.png"> <span>(02) 281 8888 / 8 7000 /  (02) 8353312</span><br>
+				  <img src="images/MailIcon.png"> <span>Clickcafe@gmail.com</span><br>
+				  <img src="images/locationIcon.png"> <span>P. Paredes, Sampaloc, Manila, Metro Manila</span> </div>
+				<div class="navigation">
+				  <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Service.html">Services</a></li>
+					<li><a href="Menu.html">Menu</a></li>
+					<li><a href="About us.html">About Us</a></li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				  </ul>
 				</div>
-				<div class="Column2">
-				  <div class="Google"> <a href="https://www.plus.google.com"><img src="images/Footer-Google.jpg"></a> </div>
-				  <div class="Tumblr"> <a href="https://www.tumblr.com"><img src="images/Footer-Tumblr.jpg"></a> </div>
-				  <div class="Youtube"> <a href="https://www.youtube.com"><img src="images/Footer-YT.jpg"></a> </div>
-				</div>
-    		</div>
-    		<div class="credits"> <span id="credits1">© 2017 CLICK CAFE. ALL RIGHTS RESERVED</span> <span id="credits2">Made with ❤ by <img src="images/CompanyLogoTransparent.png"></span> </div>
-    	</div>
+			  </div>
+			</div>
+			<div class="SocialMedia">
+			  <div class="Column1">
+				<div class="FB"> <a href="https://www.facebook.com"><img src="images/Footer-FB.jpg"></a> </div>
+				<div class="Twitter"> <a href="https://www.twitter.com"><img src="images/Footer-Twitter.jpg"></a> </div>
+				<div class="Insta"> <a href="https://www.instagram.com"><img src="images/Footer-Insta.jpg"></a> </div>
+			  </div>
+			  <div class="Column2">
+				<div class="Google"> <a href="https://www.plus.google.com"><img src="images/Footer-Google.jpg"></a> </div>
+				<div class="Tumblr"> <a href="https://www.tumblr.com"><img src="images/Footer-Tumblr.jpg"></a> </div>
+				<div class="Youtube"> <a href="https://www.youtube.com"><img src="images/Footer-YT.jpg"></a> </div>
+			  </div>
+			</div>
+			<div class="credits"> <span id="credits1">© 2017 CLICK CAFE. ALL RIGHTS RESERVED</span> <span id="credits2">Made with ❤ by <img src="images/CompanyLogoTransparent.png"></span> </div>
+		  </footer>
 	  </div>
 	</div>
 <script type="text/javascript" src="Image Slideshow.js"></script>
